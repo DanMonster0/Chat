@@ -14,7 +14,7 @@ MAX_MESSAGES_COUNT = 100
 async def main():
     global chat_msgs
 
-    put_markdown("## 🧊 Добро пожаловать в онлайн чат!")
+    put_markdown("## Добро пожаловать в онлайн чат!")
 
     msg_box = output()
     put_scrollable(msg_box, height=300, keep_bottom=True)
@@ -68,5 +68,3 @@ async def refresh_msg(nickname, msg_box):
         last_idx = len(chat_msgs)
 
 
-if __name__ == "__main__":
-    start_server(main, debug=True, port=8080, cdn=False)
